@@ -1,2 +1,2 @@
-# Unity-template
-A template repository for unity game development
+# 3rd person project
+A project to learn C#
