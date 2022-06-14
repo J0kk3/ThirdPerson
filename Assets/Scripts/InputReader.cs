@@ -49,8 +49,10 @@ public class InputReader : MonoBehaviour, Controls.IPlayerActions
     public void OnTarget(InputAction.CallbackContext context)
     {
         if (!context.performed) { return; }
+
         TargetEvent?.Invoke();
     }
+
     public void OnCancel(InputAction.CallbackContext context)
     {
         if (!context.performed) { return; }
@@ -68,5 +70,4 @@ public class InputReader : MonoBehaviour, Controls.IPlayerActions
             IsAttacking = false;
         }
     }
-
 }

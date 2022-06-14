@@ -9,7 +9,7 @@ public class Targeter : MonoBehaviour
     List<Target> targets = new List<Target>();
     public Target CurrentTarget { get; private set; }
 
-    void start()
+    void Start()
     {
         mainCamera = Camera.main;
     }
@@ -53,10 +53,10 @@ public class Targeter : MonoBehaviour
             }
         }
 
-
         if (closestTarget == null) { return false; }
 
         CurrentTarget = closestTarget;
+
         //Transform of target, weight, radius
         cineTargetGroup.AddMember(CurrentTarget.transform, 1f, 2f);
 

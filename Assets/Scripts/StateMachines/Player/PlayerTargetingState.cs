@@ -57,7 +57,7 @@ public class PlayerTargetingState : PlayerBaseState
     void UpdateAnimator(float deltaTime)
     {
         //Forward & Backward
-        if(stateMachine.InputReader.MovementValue.y == 0)
+        if (stateMachine.InputReader.MovementValue.y == 0)
         {
             stateMachine.Animator.SetFloat(TargetingForwardHash, 0, 0.1f, deltaTime);
         }
@@ -67,7 +67,7 @@ public class PlayerTargetingState : PlayerBaseState
             stateMachine.Animator.SetFloat(TargetingForwardHash, value, 0.1f, deltaTime);
         }
         //Sideways
-        if(stateMachine.InputReader.MovementValue.x == 0)
+        if (stateMachine.InputReader.MovementValue.x == 0)
         {
             stateMachine.Animator.SetFloat(TargetingRightHash, 0, 0.1f, deltaTime);
         }
